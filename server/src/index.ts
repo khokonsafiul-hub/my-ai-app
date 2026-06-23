@@ -10,7 +10,7 @@ const PORT = process.env.PORT ?? 3001;
 // and IPv6 (e.g. IPv6-enabled Docker networks — #180). Hosts with IPv6
 // disabled fall back to IPv4-only below; HOST overrides the default outright.
 const HOST = process.env.HOST ?? '::';
-let app: ReturnType<typeof createApp>;
+let app!: ReturnType<typeof createApp>;
 async function main() {
   initDb();
 
