@@ -1,9 +1,10 @@
+
 {
   "name": "@freellmapi/server",
   "version": "0.2.1",
   "private": true,
   "type": "module",
-  "scripts": {"build": "tsc"}
+  "scripts": {
     "dev": "tsx watch src/index.ts",
     "build": "tsc",
     "start": "node dist/index.js",
