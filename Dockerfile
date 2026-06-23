@@ -18,7 +18,7 @@ COPY shared/package.json ./shared/
 COPY server/package.json ./server/
 COPY client/package.json ./client/
 
-RUN npm ci
+RUN npm install
 
 FROM deps AS build
 WORKDIR /app
